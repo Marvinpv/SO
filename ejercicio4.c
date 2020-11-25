@@ -34,7 +34,9 @@ int main(int argc, char *argv[]){
             printf("Quedan %d hijos executando...\n",i);
         }
     }else{
-        printf("Soy el hijo PID\n");
+        pid_t miPid;
+        miPid = getpid();
+        printf("Soy el hijo PID: %d\n",miPid);
         exit(0);
     }
 
