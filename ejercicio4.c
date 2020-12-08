@@ -12,7 +12,7 @@
 int main(int argc, char *argv[]){
     pid_t pid;
     pid_t hijo_esperado;
-    int i;
+    int i; 
 
     for(i = 0 ; i < 5 ; i++){
         if((pid = fork()) < 0){
